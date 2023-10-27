@@ -21,7 +21,10 @@ const Navber = () => {
         <li><Link to="/" >Services</Link></li>
         {
             user?.email ?
-                <li><button onClick={handleLogOut}>Logout</button></li>
+                <>
+                    <li><Link to="/booking" >My Booking</Link></li>
+                    <li><button onClick={handleLogOut}>Logout</button></li>
+                </>
                 :
                 <li><Link to="/login" >Login</Link></li>
         }

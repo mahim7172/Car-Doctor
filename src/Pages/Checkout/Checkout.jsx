@@ -1,13 +1,13 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Components/Auth/Authprovider";
+// import { AuthContext } from "../../Components/Auth/Authprovider";
 
 
 const Checkout = () => {
     const services = useLoaderData()
     console.log(services)
-    const { title, _id, price } = services;
-    const { user } = useContext(AuthContext)
+    // const { title, _id, price } = services;
+    // const { user } = useContext(AuthContext)
 
 
     return (
